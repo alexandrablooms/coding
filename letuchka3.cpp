@@ -16,6 +16,8 @@ int str2int(const char *str) {
     if (*str == '\0') {
         exit(-1);
     }
+    /// оформление кода
+    /// переменную можно тут и инициализировать
     result =0;
     while (*str != '\0') {
         if (*str >= '0' && *str < '10') {
@@ -31,6 +33,8 @@ int str2int(const char *str) {
     }
     return (is_negative) ? result * -1: result;
 }
+
+/// код не удовлетворяет требованием задания
 int main(int argc, char *argv[]) {
     cout << argv[0] << "\n";
     int number = str2int("0x100");
