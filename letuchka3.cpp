@@ -22,6 +22,8 @@ int str2int(const char *str) {
     {
         exit(-1);
     }
+    /// оформление кода
+    /// переменную можно тут и инициализировать
     result =0;
     while (*str != '\0')
     {
@@ -41,6 +43,8 @@ int str2int(const char *str) {
     }
     return (is_negative) ? result * -1: result;
 }
+
+/// код не удовлетворяет требованием задания
 int main(int argc, char *argv[]) {
     for(int count{1}; count < argc; ++count)
     {
